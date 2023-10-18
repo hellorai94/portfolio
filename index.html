@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="16x16"  href="img/favicon-16x16.png">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="theme-color" content="#ffffff">
-
-    <title>Portfólio Pessoal</title>
+    <title>Portfólio Pessoal - Raissa Carneiro</title>
 </head>
 <body>
+    <!-- Início do menu de navegação -->
     <nav id="navbar" class="nav">
+        <!-- Lista não ordenada que contém os itens do menu -->
         <ul class="nav-list">
             <li>
                 <a href="#sobre">Sobre mim</a>
@@ -28,39 +27,104 @@
         </ul>
     </nav>
 
-    <div id="sobre" class="content">
+        <!-- Início da seção "Sobre mim" -->
+    <div id="sobre" class="geral">
+        
         <h2>Sobre mim</h2>
+        <!-- Uma imagem que representa a dona do Portfolio(EU) -->
         <img src="img/hi.jpg" alt="Raissa">
+        <!-- Parágrafo de descrição da autora do portfólio -->
         <p>
-            Eu sou Raissa, uma mulher que busca se adaptar sempre que necessário. A minha jornada em tecnologia começou no final de 2021, em plena pandemia. Minha primeira experiência acadêmica é na área de economia, mas vi na tecnologia uma nova oportunidade de desenvolvimento e aprendizado. Falar de si nunca é fácil, mas eu sou
-uma mulher com muitas responsabilidades e procura sempre fazer o seu melhor diante das circunstâncias. Além disso, eu adoro ouvir música, andar de bike e quando cozinho sempre pressa... ahhh, agora também gosto muito de nadar.
+            Eu sou Raissa, uma mulher que busca se adaptar sempre que necessário. Minha jornada em tecnologia começou no final de 2021, em plena pandemia. Minha primeira experiência acadêmica é na área de economia, mas vi na tecnologia uma nova oportunidade de desenvolvimento e aprendizado. Falar de si nunca é fácil, mas eu sou uma mulher com muitas responsabilidades e procura sempre fazer o seu melhor diante das circunstâncias. Além disso, eu adoro ouvir música, andar de bike e quando cozinho sempre pressa... ahhh, agora também gosto muito de nadar.
         </p>
+        <!-- Uma música que representa a autora do portfólio. 
+        Controles de áudio para reprodução de música -->
         <audio controls autoplay>
+            <!-- Fonte do arquivo de áudio, em mp3-->
             <source src="musica/novas-auroras.mp3" type="audio/mpeg">
         </audio>
     </div>
 
-    <div id="formacao" class="content">
+    <!-- Início da seção "Formação" -->
+    <div id="formacao" class="geral">
         <h2>Formação</h2>
-        <p><strong>Formação Acadêmica:</strong> <br>- Técnico em Desenvolvimento de Sistemas - SENAI - Conclusão Julho de 2023.
-        <br>- Graduanda em Ciências Econômicas - UEFS - Universidade Estadual de Feira de Santana. 
-        <br>- Tecnólogo em Análise e Desenvolvimento de Sistemas - UNITER - Previsão de conclusão Julho de 2025.</p>
+        <!-- Parágrafo com detalhes da formação acadêmica da autora -->
+        <p><strong>Formação Acadêmica:</strong> <br>
+            - Técnico em Desenvolvimento de Sistemas - SENAI - Conclusão em Julho de 2023. <br>
+            - Graduanda em Ciências Econômicas - UEFS - Universidade Estadual de Feira de Santana. <br>
+            - Tecnólogo em Análise e Desenvolvimento de Sistemas - UNITER - Previsão de conclusão em Julho de 2025.
+        </p>
         <br>
+        <!-- Parágrafo com informações sobre idiomas -->
         <p><strong>Línguas:</strong> Inglês intermediário.</p>
         <br>
+        <!-- Parágrafo com informações sobre habilidades -->
         <p><strong>Habilidades:</strong> zOS   Mainframe  ·   Python ·  SQL</p>
     </div>
 
+    <!-- Inicio da sessão de portfolio -->
+    <div id="portfolio" class="geral">
+        <div class="portfolio-header">
+            <img src="img/hi_tres.jpeg" alt="Imagem do Projeto 1">
+            <h2>Meus Projetos</h2>
+        </div>
+
+        <!-- Lista de projetos realizados pela autora -->
+        <ul class="projetos-lista">
+            <li class="projeto">
+                <div class="projeto-info">
+                    <h3>Projeto 1 - Ada Lovelace</h3>
+                    <p>Foi o meu primeiro projeto. Eu fiz o curso do programaria e desenvolvi esse site. Foi muito legal para entender um pouco como que funciona o desenvolvimento web. Um pontapé importante.</p>
+                    <br><a href="https://github.com/hellorai94?tab=repositories" target="_blank">Ver no GitHub</a>
+                </div>
+            </li>
+            <li class="projeto">
+                <div class="projeto-info">
+                    <h3>Projeto 2 - Certificação de Responsive Design no FreeCode</h3>
+                    <p>Tentando entender um pouco mais sobre html e css, eu comecei a fazer uma certificação no FreeCode. Foi muito importante conseguir finalizá-la.</p>
+                    <br><a href="https://github.com/hellorai94/Freecode" target="_blank">Ver no GitHub</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Início da seção de contato -->
+    <div id="contato" class="geral">
+        <h2>Entre em Contato</h2>
+
+        <!-- Formulário de Contato -->
+        <form id="contato-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" required>Manda aí uma mensagem para mim :)</textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Rodapé do site-->
     <footer class="footer">
+        <!-- Conteúdo do Rodapé -->
         <div class="footer-content">
             <p class="footer-para">&copy; 2023 - Raissa Carneiro</p>
         </div>
-    </footer>    
-    
-    
-    <button id="scrollTopButton" onclick="scrollToElement('navbar')">↑</button>
+    </footer>
+
+    <!-- Inclusão de Script Externo -->
     <script src="js/script.js"></script>
 
 </body>
 </html>
- 

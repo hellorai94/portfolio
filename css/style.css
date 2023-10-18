@@ -1,10 +1,12 @@
+/* Estilo global para o corpo */
 body {
   margin: 0;
   padding: 0;
-  background-color:#faeaf2;
+  background-color: #faeaf2;
   font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
+/* Estilo da barra de navegação */
 .nav {
   position: fixed;
   top: 0;
@@ -15,86 +17,129 @@ body {
   padding: 20px 0px;
 }
 
+/* Estilo da lista de navegação */
 .nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Estilo dos itens da lista de navegação */
 .nav-list li {
   display: inline;
   margin: 0 30px;
 }
 
+/* Estilo dos links da lista de navegação */
 .nav-list a {
   text-decoration: none;
   color: #fff;
   font-size: 23px;
 }
 
+/* Estilo da barra de navegação quando a página é rolada (classe 'scrolled') */
 .nav.scrolled {
   background-color: #de4c92;
 }
 
-.content {
+/* Estilo global para elementos com classe 'geral' */
+.geral {
   text-align: center;
   margin-top: 50px;
   padding: 20px;
 }
 
+/* Estilo para cabeçalho (h2) */
 h2 {
   font-size: 24px;
-  color: #470923
+  color: #470923;
 }
 
+/* Estilo para imagens  */
 img {
-  border: 3px;
   border-radius: 50%;
-  max-width: 250px; /* Aumenta o tamanho da imagem */
-  display: inline-block;
+  max-width: 250px;
+  display: block;
   margin: 0 auto;
 }
 
+/* Estilo para parágrafos */
 p {
   font-size: 18px;
   color: #470923;
-  max-width: 600px; /* Largura máxima do texto */
-  display: block; /* Alterado para block para justificar o texto */
-  text-align: justify; /* Justifica o texto */
-  padding: 20px; /* Adiciona um espaçamento interno */
-  border: 3px solid #000000; /* Borda rosa */
+  max-width: 600px;
+  display: block;
+  text-align: justify;
+  padding: 20px;
+  border: 3px solid #000000;
   margin: 0 auto;
 }
 
+/* Estilo para listas de projetos  */
+.projetos-lista li {
+  list-style-type: none;
+}
+
+/* Estilo para o formulário de contato (#contato-form) */
+#contato-form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Estilo para etiquetas (labels) do formulário (#contato-form label) */
+#contato-form label {
+  display: block;
+  font-size: 18px;
+  color: #470923;
+}
+
+/* Estilo para campos de entrada de texto e email (#contato-form input[type="text"], #contato-form input[type="email"]) */
+#contato-form input[type="text"],
+#contato-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+/* Estilo para o campo de texto (#contato-form textarea) */
+#contato-form textarea {
+  min-height: 150px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+/* Estilo para o botão de envio do formulário (#contato-form button) */
+#contato-form button {
+  background-color: #470923;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo do botão de envio do formulário ao passar o mouse (hover) */
+#contato-form button:hover {
+  background-color: #de4c92;
+  color: #470923;
+}
+
+/* Estilo para parágrafos no rodapé */
 .footer-para {
   color: #fff;
   text-align: center;
 }
 
+/* Estilo do rodapé (footer) */
 .footer {
   background-color: #000000;
   color: #fff;
   text-align: center;
   padding: 1px 1px;
-}
-
-
-#scrollTopButton {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 24px;
-  background-color: #470923;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-#scrollTopButton:hover {
-  background-color: #faeaf2;
-  color: #470923;
 }
