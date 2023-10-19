@@ -6,7 +6,6 @@ body {
   font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
-/* Estilo da barra de navegação */
 .nav {
   position: fixed;
   top: 0;
@@ -15,6 +14,7 @@ body {
   background-color: #000000;
   text-align: center;
   padding: 20px 0px;
+  z-index: 1000; 
 }
 
 /* Estilo da lista de navegação */
@@ -47,6 +47,11 @@ body {
   text-align: center;
   margin-top: 50px;
   padding: 20px;
+}
+
+/* Estilo global para elementos de áudio */
+audio {
+  z-index: 999; 
 }
 
 /* Estilo para cabeçalho (h2) */
